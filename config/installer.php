@@ -139,7 +139,6 @@ return [
     |--------------------------------------------------------------------------
     */
     'need_to_know' => [
-        'Codecanyon Purchase Code',
         'Database Name',
         'Database Username',
         'Database Password',
@@ -155,41 +154,10 @@ return [
     'users' => [
         'root' => [
             'name' => 'Joynal Abedin',
-            'email' => 'abedin.dev@gmail.com',
+            'email' => 'admin@gmail.com',
             'password' => 'secret',
             'email_verified_at' => now()
         ]
-    ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Market place validation
-    | set a verification code for active from market
-    |--------------------------------------------------------------------------
-    */
-    'product' => 'readylms',
-    //which product you verify same as supported server
-    'verify_code' => 'KUpRjYxoVI5gUAU7In35bkN5QzlvWU5rcUxxSENaRnNoOVowdW1CckRsTHNCUXJkaHZHc0UwTVhvdFZPSksrbjBBeEFJZmNQVVlKQlFzVHozUjFraVhGRHBkTkV4ZlZLWTF0NVh3PT0=',
-    'verify_purchase' => true,
-    'verify_rules' => [
-        'email' => [
-            'rule' => 'required|string',
-            'label' => 'Email',
-            'type' => 'email',
-            'placeholder' => 'e.g: example@email.com'
-        ],
-        'username' => [
-            'rule' => 'required|string',
-            'label' => 'Codecanyon Username',
-            'type' => 'text',
-            'placeholder' => 'e.g: razinsoft'
-        ],
-        'purchase_code' => [
-            'rule' => 'required|string',
-            'label' => 'Product Purchase Code',
-            'type' => 'text',
-            'placeholder' => 'e.g: 040afd3f-4cxa-4241-9e70-4gde9e4t674b'
-        ],
     ],
 
     /*
@@ -220,12 +188,4 @@ return [
         'php artisan db:seed CertificateSeeder --force',
     ],
 
-    'regular_license' => [
-        'link' => 'https://codecanyon.net/checkout/from_item/54616851/?license=regular&size=source&ref=pds',
-        'price' => 29
-    ],
-    'extende_license' => [
-        'link' => 'https://codecanyon.net/checkout/from_item/54616851/?license=extended&size=source&ref=pds',
-        'price' => 199
-    ]
 ];
